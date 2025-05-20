@@ -1,0 +1,261 @@
+﻿- type: altar
+  id: Nanotrasen
+  name: altar-prototype-name-nanotrasen
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: nanotrasen
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-nanotrasen
+
+- type: altar
+  id: Chaos
+  name: altar-prototype-name-chaos
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: chaos
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-chaos
+
+- type: altar
+  id: Druid
+  name: altar-prototype-name-druid
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: druid
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-druid
+
+- type: altar
+  id: Toolbox
+  name: altar-prototype-name-toolbox
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: toolbox
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-toolbox
+
+- type: altar
+  id: Christian
+  name: altar-prototype-name-christian
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: space-christian
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: space-christian_lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-christian
+
+- type: altar
+  id: Satanic
+  name: altar-prototype-name-satanic
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: satana
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: satana_lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#ff6347"
+    enabled: true
+  description: altar-prototype-description-satanic
+
+- type: altar
+  id: Technology
+  name: altar-prototype-name-technology
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: technology
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+    state: technology_lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#e0ffff"
+    enabled: true
+  description: altar-prototype-description-technology
+
+- type: altar
+  id: Festival
+  name: altar-prototype-name-festival
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: festival
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-festival
+
+- type: altar
+  id: Maint
+  name: altar-prototype-name-maint
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: maint
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-maint
+
+- type: altar
+  id: Blue
+  name: altar-prototype-name-blue
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: blue
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-blue
+
+- type: altar
+  id: Burden
+  name: altar-prototype-name-burden
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: convertaltar
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-burden
+
+- type: altar
+  id: Convert
+  name: altar-prototype-name-convert
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: convertaltar
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-convert
+
+- type: altar
+  id: Orange
+  name: altar-prototype-name-orange
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: orange
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-orange
+
+- type: altar
+  id: Red
+  name: altar-prototype-name-red
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: red
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-red
+
+- type: altar
+  id: White
+  name: altar-prototype-name-white
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: white
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-white
+
+- type: altar
+  id: Yellow
+  name: altar-prototype-name-yellow
+  icon:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: yellow
+  lighting:
+    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
+    state: lightning
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#fbceb1"
+    enabled: true
+  description: altar-prototype-description-yellow
+
+- type: altar
+  id: Heaven
+  name: altar-prototype-name-heaven
+  icon:
+    sprite: Structures/Furniture/Altars/Cults/heaven.rsi
+    state: full
+  lighting:
+    sprite: Structures/Furniture/Altars/Cults/heaven.rsi
+    state: blood
+  pointlight:
+    radius: 1.5
+    energy: 1
+    color: "#f08080"
+    enabled: true
+  description: altar-prototype-description-heaven
+
+- type: altar
+  id: Fanged
+  name: altar-prototype-name-fanged
+  icon:
+    sprite: Structures/Furniture/Altars/Cults/fangs.rsi
+    state: full
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-fanged
+
+- type: altar
+  id: Bananium
+  name: altar-prototype-name-bananium
+  icon:
+    sprite: Structures/Furniture/Altars/Cults/bananium.rsi
+    state: full
+  pointlight:
+    enabled: false
+  description: altar-prototype-description-bananium
