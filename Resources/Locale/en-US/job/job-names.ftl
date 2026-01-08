@@ -112,7 +112,8 @@ JobResearchDirector = Research Director
 JobSalvageSpecialist = Salvage Specialist
 JobScientist = Scientist
 JobSecurityCadet = Security Cadet
-JobSecurityOfficer = Security Officer
+# imp edit, officer -> guard
+JobSecurityOfficer = Security Guard
 JobServiceWorker = Service Worker
 JobStationAi = Station AI
 JobStationEngineer = Station Engineer

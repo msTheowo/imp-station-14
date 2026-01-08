@@ -322,8 +322,8 @@
 - type: entity
   parent: BasePlushieLizardJob
   id: PlushieLizardJobSecurityofficer
-  name: security officer lizard plushie
-  description: An adorable stuffed toy that resembles a lizardperson as a security officer. The stuffing has been padded down from a lot of punching.
+  name: security guard lizard plushie # imp edit, officer -> guard
+  description: An adorable stuffed toy that resembles a lizardperson as a security guard. The stuffing has been padded down from a lot of punching. # imp edit, officer -> guard
   components:
   - type: Sprite
     state: securityofficer

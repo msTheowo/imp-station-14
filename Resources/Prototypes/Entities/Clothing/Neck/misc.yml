@@ -64,7 +64,7 @@
   parent: ClothingNeckBase
   id: Dinkystar
   name: star sticker
-  description: A dinky lil star for only the hardest working security officers! It's not even sticky anymore.
+  description: A dinky lil star for only the hardest working security guards! It's not even sticky anymore. # imp edit, officer -> guard
   components:
   - type: Sprite
     sprite: Clothing/Neck/Misc/dinkystar.rsi

@@ -22,7 +22,7 @@
   name: stun bat
   parent: [Stunbaton, BaseSecurityContraband]
   id: Stunbat
-  description: A Stun Baton designed with the athletic security officer in mind. Using this unpowered is sure to have a foul called.
+  description: A Stun Baton designed with the athletic security guard in mind. Using this unpowered is sure to have a foul called.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Melee/stunbat.rsi

@@ -253,7 +253,7 @@
   parent: [ClothingHeadset, BaseCommandContraband]
   id: ClothingHeadsetHOS
   name: head of security's headset
-  description: A headset for the head of security to ignore all security officer reports on.
+  description: A headset for the head of security to ignore all security guard reports on. # imp edit, officer -> guard
   components:
   - type: ContainerFill
     containers:

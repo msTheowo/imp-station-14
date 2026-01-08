@@ -51128,7 +51128,7 @@ entities:
     - type: Transform
       pos: 57.5,17.5
       parent: 2
-    - type: Paper
+    - type: Paper # imp edit, officer -> guard
       content: >-
         [bold]Roles:[/bold]
 
@@ -51138,7 +51138,7 @@ entities:
 
         The Captain/HoP/Warden is ct as the judicial authority.
 
-        The Security Officers are responsible for executing warrants, security during trial, and prisoner transport.
+        The Security Guards are responsible for executing warrants, security during trial, and prisoner transport.
 
 
         [bold]Investigative Phase:[/bold]
@@ -51194,7 +51194,7 @@ entities:
 
         [bold]Sentencing Phase:[/bold]
 
-        If the death penalty was sought (you MUST have gone through a trial for death penalty) then skip to the second part. 
+        If the death penalty was sought (you MUST have gone through a trial for death penalty) then skip to the second part.
 
         I. Each side can present more evidence/witnesses in any order. There is NO ban on emotional aspects or anything. The prosecution is to submit a suggested penalty. After all the sides are done then the judicial authority is to give a sentence.
 

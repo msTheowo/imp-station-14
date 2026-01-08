@@ -162,7 +162,7 @@
     - RandomHumanoidVisitorSecurityCadet
 
 - type: entity
-  name: visiting security officer spawner
+  name: visiting security guard spawner # imp edit, officer -> guard
   id: VisitorSecurityOfficerSpawner
   parent: MarkerBase
   components:

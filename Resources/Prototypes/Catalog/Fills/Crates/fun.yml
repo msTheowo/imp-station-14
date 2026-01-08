@@ -575,7 +575,7 @@
   id: CrateFunBikeHornImplants
   parent: CrateGenericSteel
   name: bike horn implants
-  description: A thousand honks a day keeps security officers away!
+  description: A thousand honks a day keeps security guards away! # imp edit, officer -> guard
   components:
   - type: StorageFill
     contents:

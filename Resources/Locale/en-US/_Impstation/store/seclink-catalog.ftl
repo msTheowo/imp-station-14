@@ -1,6 +1,7 @@
 # Batons
 seclink-stun-baton-name = Stun Baton
-seclink-stun-baton-desc = The standard issue stun baton. A Sec Officer's best friend.
+# imp edit, officer -> guard
+seclink-stun-baton-desc = The standard issue stun baton. A Sec Guard's best friend.
 seclink-fun-baton-name = Fun Baton
 seclink-fun-baton-desc = Projects a heretofore unseen energy capable of entertaining even the sourest of pusses. Said to be powered by "the funniest thing any of us have ever seen," but the casing has been hermetically sealed...
 seclink-stun-bat-name = Stun Bat
@@ -10,7 +11,8 @@ seclink-stun-sabre-desc = This is the result of several months and several itera
 
 # Disablers
 seclink-disabler-name = Disabler Pistol
-seclink-disabler-desc = The standard issue disabler. A Sec Officer's normal friend.
+# imp edit, officer -> guard
+seclink-disabler-desc = The standard issue disabler. A Sec Guard's normal friend.
 seclink-funny-disabler-name = Discombobulator
 seclink-funny-disabler-desc = This disabler projects a heretofore unseen energy described as "The very essence of humor." When the inventor was questioned about the implications of their discovery, they simply responded, "It works, doesn't it? Leave me alone."
 seclink-pocket-disabler-name = Pocket Disabler

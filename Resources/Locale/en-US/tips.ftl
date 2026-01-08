@@ -64,8 +64,10 @@ tips-dataset-62 = As the Chef, your knife can act as a weapon in an emergency.
 tips-dataset-63 = As the Chef, you can sneak liquids into your foods. As a traitor, putting a little bit of amatoxin or other poison can greatly annoy the crew!
 tips-dataset-64 = As the Mime, your vow to not speak or write is your source of power. Breaking it robs you of your powers and of your honor.
 tips-dataset-65 = As the Lawyer, try to negotiate with the Warden if sentences seem too high for the crime.
-tips-dataset-66 = As a Security Officer, communicate and coordinate with your fellow officers using the security radio channel to avoid confusion.
-tips-dataset-67 = As a Security Officer, remember that correlation does not equal causation. Someone may have just been at the wrong place at the wrong time!
+# imp edit, officer -> guard
+tips-dataset-66 = As a Security Guard, communicate and coordinate with your fellow guards using the security radio channel to avoid confusion.
+# imp edit, officer -> guard
+tips-dataset-67 = As a Security Guard, remember that correlation does not equal causation. Someone may have just been at the wrong place at the wrong time!
 tips-dataset-68 = As a Detective, you can chase criminals more effectively by using fingerprint fiber data and DNA obtained from forensic scans of objects the perpetrator likely interacted with.
 tips-dataset-69 = As an Atmospheric Technician, your ATMOS holofan projector blocks gases while allowing objects to pass through. With it, you can quickly contain gas spills, fires and hull breaches.
 tips-dataset-70 = As an Atmospheric Technician, try to resist the temptation of making canister bombs for Nuclear Operatives, unless you're in a last-ditch scenario. They often lead to large amounts of unnecessary friendly fire!

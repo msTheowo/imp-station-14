@@ -13,7 +13,8 @@ highlights-administrative-assistant = Administrative Assistant, "AA", Command, S
 # Security
 highlights-detective = Detective, "Det", Security, "Sec"
 highlights-security-cadet = Security Cadet, Cadet, Security, "Sec"
-highlights-security-officer = Security Officer, Secoff, Officer, Security, "Sec"
+# imp edit, add security guard
+highlights-security-officer = Security Officer, Security Guard, Secoff, Officer, Security, "Sec"
 highlights-warden = Warden, "Ward", Security, "Sec"
 # impstation edit - new job
 highlights-brigmedic = Brigmedic, Brigmed, "Medic", Security, "Sec"

@@ -2,7 +2,7 @@
   parent: ClothingOuterWinterCoat
   id: ClothingOuterStasecSweater
   name: station security sweater
-  description: A thick synthetic sweater with reinforced shoulders and elbows, enough to warm even the harshest security officer's cold heart.
+  description: A thick synthetic sweater with reinforced shoulders and elbows, enough to warm even the harshest security guard's cold heart. # imp edit, officer -> guard
   components:
   - type: Sprite
     sprite: _DV/Clothing/OuterClothing/WinterCoats/stasecsweater.rsi

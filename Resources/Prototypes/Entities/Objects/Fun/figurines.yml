@@ -169,8 +169,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSecurity
-  name: security officer figure
-  description: A figurine depicting a Security Officer holding a stunbaton, ready to defend the station.
+  name: security guard figure
+  description: A figurine depicting a Security Guard holding a stunbaton, ready to defend the station. # imp edit, officer -> guard
   components:
   - type: Sprite
     state: security

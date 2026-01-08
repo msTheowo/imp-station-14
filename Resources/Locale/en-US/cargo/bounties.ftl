@@ -99,7 +99,8 @@ bounty-description-donk-pocket =  URGENT MESSAGE FROM Donk Co: Consumer Safety R
 bounty-description-donut = CentComm's security forces are facing heavy losses against the Syndicate. Ship donuts to raise morale.
 bounty-description-figurine = The vice president's son saw an ad for action figures on the telescreen and now he won't shut up about them. Ship some to ease his complaints.
 bounty-description-flesh-monster = We've recently received reports of some kind of flesh monster infestation onboard several stations. Send us a few samples of these creatures so we can investigate new botanical opportunities.
-bounty-description-flower = Commander Zot really wants to sweep Security Officer Olivia off her feet. Send a shipment of flowers and he'll happily reward you.
+# imp edit, officer -> guard
+bounty-description-flower = Commander Zot really wants to sweep Security Guard Olivia off her feet. Send a shipment of flowers and he'll happily reward you.
 bounty-description-galaxythistle = After a particularly nasty foam backpressure from a scrubber, a high-ranking officer got badly poisoned. Send us some galaxythistle so we can prepare him a homeopathic remedy.
 bounty-description-handcuffs = A large influx of escaped convicts have arrived at Central Command. Now is the perfect time to ship out spare handcuffs (or restraints).
 bounty-description-instrument = The hottest new band in the galaxy, Cindy Kate and the Saboteurs, lost their gear in a cargo shuttle collision. Send them a new set of instruments so they can play their show.

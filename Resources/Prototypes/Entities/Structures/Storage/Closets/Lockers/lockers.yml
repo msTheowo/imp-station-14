@@ -368,7 +368,7 @@
 - type: entity
   id: LockerSecurity
   parent: LockerBaseSecure
-  name: security officer's locker
+  name: security guard's locker # imp edit, officer -> guard
   components:
   - type: Appearance
   - type: EntityStorageVisuals
