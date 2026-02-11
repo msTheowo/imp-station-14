@@ -5,18 +5,22 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.Emag.Systems; // imp
 
 namespace Content.Shared.Cargo;
 
 public abstract class SharedCargoSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] private readonly EmagSystem _emag = default!; // imp
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<StationBankAccountComponent, MapInitEvent>(OnMapInit);
+
+        SubscribeLocalEvent<CargoOrderConsoleComponent, GotEmaggedEvent>(OnEmagged); // imp
     }
 
     private void OnMapInit(Entity<StationBankAccountComponent> ent, ref MapInitEvent args)
@@ -201,6 +205,24 @@ public abstract class SharedCargoSystem : EntitySystem
 
         Dirty(ent);
     }
+
+    // imp start
+    private void OnEmagged(Entity<CargoOrderConsoleComponent> ent, ref GotEmaggedEvent args)
+    {
+        if (!_emag.CompareFlag(args.Type, EmagType.Interaction))
+            return;
+
+        if (_emag.CheckFlag(ent, EmagType.Interaction))
+            return;
+
+        // imp edit start, emag market
+        ent.Comp.AllowedGroups.Add("Syndicate");
+        ent.Comp.Mode = CargoOrderConsoleMode.DirectOrder;
+        // imp edit end
+
+        args.Handled = true;
+    }
+    // imp end
 }
 
 [NetSerializable, Serializable]

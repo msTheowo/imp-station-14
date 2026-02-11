@@ -39,6 +39,7 @@ public sealed partial class StationCargoOrderDatabaseComponent : Component
     public List<ProtoId<CargoMarketPrototype>> Markets = new()
     {
         "market",
+        "Syndicate", // imp
     };
 
     // TODO: Can probably dump this

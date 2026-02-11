@@ -21,7 +21,10 @@ using Robust.Shared.Utility;
 using Content.Shared.Radio; // imp edit
 using Content.Shared.Stacks; // imp edit
 using Content.Shared.Storage.Components; // imp edit
-using System.Text; // imp edit
+using System.Text; // imp
+using Content.Server.StationRecords.Systems; // imp
+using Content.Shared.StationRecords; // imp
+using Robust.Shared.Random; // imp
 
 namespace Content.Server.Cargo.Systems
 {
@@ -30,6 +33,7 @@ namespace Content.Server.Cargo.Systems
         [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
         [Dependency] private readonly EmagSystem _emag = default!;
         [Dependency] private readonly IGameTiming _timing = default!;
+        [Dependency] private readonly StationRecordsSystem _records = default!; // imp
 
         private void InitializeConsole()
         {
@@ -39,7 +43,7 @@ namespace Content.Server.Cargo.Systems
             SubscribeLocalEvent<CargoOrderConsoleComponent, BoundUIOpenedEvent>(OnOrderUIOpened);
             SubscribeLocalEvent<CargoOrderConsoleComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<CargoOrderConsoleComponent, InteractUsingEvent>(OnInteractUsing);
-            SubscribeLocalEvent<CargoOrderConsoleComponent, GotEmaggedEvent>(OnEmagged);
+            //SubscribeLocalEvent<CargoOrderConsoleComponent, GotEmaggedEvent>(OnEmagged); // imp
         }
 
         private void OnInteractUsingCash(EntityUid uid, CargoOrderConsoleComponent component, ref InteractUsingEvent args)
@@ -115,6 +119,7 @@ namespace Content.Server.Cargo.Systems
             UpdateOrderState(uid, station);
         }
 
+        /* imp edit, move to shared
         private void OnEmagged(Entity<CargoOrderConsoleComponent> ent, ref GotEmaggedEvent args)
         {
             if (!_emag.CompareFlag(args.Type, EmagType.Interaction))
@@ -125,6 +130,7 @@ namespace Content.Server.Cargo.Systems
 
             args.Handled = true;
         }
+        */
 
         private void UpdateConsole()
         {
@@ -250,6 +256,26 @@ namespace Content.Server.Cargo.Systems
                 if (CargoOrderConsoleComponent.BaseAnnouncementChannel != order.AnnouncementChannel) // imp edit
                     _radio.SendRadioMessage(uid, message, CargoOrderConsoleComponent.BaseAnnouncementChannel, uid, escapeMarkup: false);
             }
+            // imp edit start
+            else
+            {
+                _records.TryGetRandomRecord<GeneralStationRecord>(station.Value, out var randomRecord);
+
+                if (randomRecord == null)
+                    return;
+
+                var randomProduct = _protoMan.Index(_random.Pick(GetAvailableProducts((uid, component))));
+
+                var randomAmount = _random.Next(5);
+
+                var message = Loc.GetString("cargo-console-unlock-approved-order-broadcast",
+                    ("productName", Loc.GetString(randomProduct.Name)),
+                    ("orderAmount", randomAmount),
+                    ("approver", randomRecord.Name + " (" + randomRecord.JobTitle + ")"),
+                    ("cost", randomProduct.Cost * randomAmount));
+                _radio.SendRadioMessage(uid, message, CargoOrderConsoleComponent.BaseAnnouncementChannel, uid, escapeMarkup: false);
+            }
+            // imp edit end
 
             ConsolePopup(args.Actor, Loc.GetString("cargo-console-trade-station", ("destination", MetaData(ev.FulfillmentEntity.Value).EntityName)));
 
