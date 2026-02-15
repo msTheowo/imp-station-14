@@ -1,5 +1,5 @@
 - type: lobbyBackground
   id: PlaceholderLobbyScreenID
   background: /Textures/_QB/LobbyScreens/placeholder.webp
-  title: lobby-state-background-placeholder-title
-  artist: lobby-state-background-placeholder-artist
+  title: lobby-state-background-qb-placeholder-title
+  artist: lobby-state-background-qb-placeholder-artist
