@@ -825,7 +825,7 @@
   description: uplink-syndicate-id-card-desc
   productEntity: SyndicateIDCard
   cost:
-    Telecrystal: 1
+    Telecrystal: 0
   categories:
   - UplinkDeception
 
