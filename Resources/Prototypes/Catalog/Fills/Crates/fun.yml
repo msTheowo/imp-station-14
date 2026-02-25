@@ -1,4 +1,50 @@
 - type: entityTable
+  id: AllPlushiesTable
+  table: !type:GroupSelector
+    children:
+    - id: PlushieBee
+    - id: PlushieNar
+      weight: 0.5
+    - id: PlushieRatvar
+      weight: 0.5
+    - id: PlushieNuke
+    - id: PlushieSlime
+    - id: PlushieSnake
+    - id: PlushieExperiment
+    - !type:GroupSelector
+      children:
+      - id: PlushieLizard
+        weight: 9
+      - id: PlushieSpaceLizard
+        weight: 1
+      - id: PlushieLizardInversed
+        weight: 0.5
+    - !type:GroupSelector
+      children:
+      - id: PlushieCarp
+      - id: PlushieHolocarp
+        weight: 0.25
+      - id: PlushieMagicarp
+        weight: 0.25
+      - id: PlushieRainbowCarp
+        weight: 0.15
+    - id: PlushieVox
+    - id: PlushieRouny
+    - !type:GroupSelector
+      children:
+      - id: PlushieSharkBlue
+      - id: PlushieSharkGrey
+      - id: PlushieSharkPink
+    - id: PlushieAtmosian
+    - id: PlushieDiona
+    - id: PlushieXeno
+    - id: PlushieHampter
+    - id: PlushieMoth
+    - id: PlushieArachind
+    - id: PlushiePenguin
+    - id: PlushieVulp
+
+- type: entityTable
   id: AllPottedPlantsTable
   table: !type:GroupSelector
     children:
@@ -62,10 +108,16 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      entity_storage: !type:NestedSelector
-        tableId: AllLizardPlushieTable
-        rolls: !type:ConstantNumberSelector
-          value: 6
+      entity_storage: !type:AllSelector
+        children:
+        - id: PlushieLizard
+          amount: !type:ConstantNumberSelector
+            value: 3
+        - id: PlushieSpaceLizard
+          amount: !type:ConstantNumberSelector
+            value: 3
+        - id: PlushieLizardJobMultiweh # the exceedingly rare multiweh!
+          prob: 0.01
 
 - type: entity
   parent: CrateGenericSteel
