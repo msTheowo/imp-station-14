@@ -3349,7 +3349,7 @@
   # imp edit end
 
 - type: entity
-  parent: [DogBarkBase, MobCorgiBase] # imp edit
+  parent: [DogTackleBase, MobCorgiBase] # imp edit
   id: MobCorgi
   components:
   - type: DamageStateVisuals
