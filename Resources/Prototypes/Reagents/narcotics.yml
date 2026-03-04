@@ -135,11 +135,11 @@
       metabolismRate: 1.0
       effects:
       - !type:MovementSpeedModifier
+        walkSpeedModifier: 1.3
+        sprintSpeedModifier: 1.3
       - !type:ModifyStatusEffect
         effectProto: StatusEffectStimulantsStamina # You are on meth. You keep going.
         time: 3
-        walkSpeedModifier: 1.3
-        sprintSpeedModifier: 1.3
       - !type:HealthChange
         conditions:
           - !type:ReagentCondition
