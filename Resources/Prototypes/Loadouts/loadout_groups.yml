@@ -1235,7 +1235,6 @@
   - HeadofSecurityBeret
   - HeadofSecurityHeadDV # DeltaV
   - HeadofSecurityPatrolCap # imp
-  - HeadofSecurityColonelCap # imp
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1251,8 +1250,6 @@
   - HeadofSecurityJumpskirtGrey #imp
   - HeadofSecurityProfessionalJumpsuit # imp
   - HeadofSecurityProfessionalJumpskirt # imp
-  - HeadofSecurityColonelJumpsuit # imp
-  - HeadofSecurityColonelJumpskirt # imp
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
