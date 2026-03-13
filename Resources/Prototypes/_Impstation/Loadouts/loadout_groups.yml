@@ -473,7 +473,7 @@
   loadouts:
   - BlackShoes
   - ChefShoes
-  - BlackHeels
+  #- BlackHeels QB: chefs don't wear high heels... Ignore the clown shoes.......
   - ClownShoesExpert
   - HeadChefShoes
 
