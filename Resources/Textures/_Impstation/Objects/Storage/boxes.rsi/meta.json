@@ -14,9 +14,6 @@
             "name": "box2"
         },
         {
-            "name": "box_butler"
-        },
-        {
             "name": "box_chef"
         },
         {
@@ -55,9 +52,6 @@
         },
         {
             "name": "grains"
-        },
-        {
-            "name": "goldentoiletsir"
         },
         {
             "name": "internals"
