@@ -648,6 +648,7 @@ namespace Content.IntegrationTests.Tests
                 new("/Maps/amber.yml"),
                 new("/Maps/bagel.yml"),
                 new("/Maps/box.yml"),
+                new("/Maps/_Impstation/box.yml"),
                 new("/Maps/centcomm.yml"),
                 new("/Maps/exo.yml"),
                 new("/Maps/fland.yml"),
