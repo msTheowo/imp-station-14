@@ -136,9 +136,9 @@
           minCount: 16 # imp - upped value for imp5
           maxCount: 20 # imp - upped value for imp5
           addComponents:
-          - type: Gravity
-            enabled: true
-            inherent: true
+          # - type: Gravity # QB comment
+          #   enabled: true
+          #   inherent: true
           - type: IFF
             flags: HideLabel
           protos:
@@ -152,10 +152,10 @@
           maximumDistance: 350
           nameDataset: NamesBorer
           stationGrid: false
-          addComponents:
-          - type: Gravity
-            enabled: true
-            inherent: true
+          # addComponents:
+          # - type: Gravity # QB comment
+          #   enabled: true
+          #   inherent: true
           protos:
           - VGRoid
 
