@@ -378,7 +378,7 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
 
     public static Color ClampColor(Color color)
     {
-        return new(color.RByte, color.GByte, color.BByte);
+        return Color.FromHex(color.ToHex()); //QB Fix - i think this was a heisen test? This is a lot better anyways
     }
 
     public static HumanoidCharacterAppearance EnsureValid(HumanoidCharacterAppearance appearance, string species, Sex sex)

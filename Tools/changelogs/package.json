@@ -1,0 +1,9 @@
+{
+  "name": "quantum-blue-changelogs",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "js-yaml": "^4.1.1"
+  }
+}

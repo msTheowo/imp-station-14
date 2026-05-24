@@ -1,0 +1,82 @@
+name: PR Changelogs
+
+concurrency:
+  group: pr-changelogs
+  cancel-in-progress: false
+
+on:
+  pull_request_target:
+    types: [closed]
+    branches:
+    - master
+
+env:
+  BASE_BRANCH: ${{ github.event.pull_request.base.ref }}
+  CHANGELOG_BRANCH: ${{ vars.CHANGELOG_BRANCH || github.event.pull_request.base.ref }}
+  CHANGELOG_FILE: Resources/Changelog/QuantumBlue.yml
+  CHANGELOG_MESSAGE: ${{ vars.CHANGELOG_MESSAGE || 'Update changelog' }}
+  CHANGELOG_USER: ${{ vars.CHANGELOG_USER || 'QuantumBlue Bot' }}
+  CHANGELOG_EMAIL: ${{ vars.CHANGELOG_EMAIL || 'bot@users.noreply.github.com' }}
+  GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+  PR_NUMBER: ${{ github.event.number }}
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    permissions:
+      contents: write
+      pull-requests: read
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.2.2
+      with:
+        token: ${{ secrets.BOT_TOKEN }}
+        ref: ${{ env.BASE_BRANCH }}
+        fetch-depth: 0
+
+    - name: Prepare changelog branch
+      shell: bash
+      run: |
+        git fetch origin "${CHANGELOG_BRANCH}" || true
+        if git show-ref --verify --quiet "refs/remotes/origin/${CHANGELOG_BRANCH}"; then
+          git checkout -B "${CHANGELOG_BRANCH}" "origin/${CHANGELOG_BRANCH}"
+        else
+          git checkout -B "${CHANGELOG_BRANCH}" "origin/${BASE_BRANCH}"
+        fi
+
+    - name: Setup git identity
+      shell: bash
+      run: |
+        git config user.name "${CHANGELOG_USER}"
+        git config user.email "${CHANGELOG_EMAIL}"
+
+    - name: Setup Node
+      uses: actions/setup-node@v4.4.0
+      with:
+        node-version: 20.x
+
+    - name: Install changelog dependencies
+      shell: bash
+      run: |
+        cd Tools/changelogs
+        npm install
+
+    - name: Generate changelog entry
+      shell: bash
+      run: |
+        cd Tools/changelogs
+        node changelog.js
+
+    - name: Commit changelog update
+      shell: bash
+      run: |
+        git add "${CHANGELOG_FILE}"
+        if git diff --cached --quiet; then
+          echo "No changelog changes to commit"
+          exit 0
+        fi
+
+        git commit -m "${CHANGELOG_MESSAGE} (#${PR_NUMBER})"
+        git push origin "${CHANGELOG_BRANCH}"

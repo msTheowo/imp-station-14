@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
   pull-requests: write
 
 jobs:
@@ -21,5 +22,5 @@ jobs:
         uses: eps1lon/actions-label-merge-conflict@v3.0.0
         with:
           dirtyLabel: "S: Merge Conflict"
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          repoToken: ${{ github.token }}
           commentOnDirty: "This pull request has conflicts, please resolve those before we can evaluate the pull request."

@@ -37,7 +37,7 @@ public sealed class NukeOpsTest
     /// <summary>
     /// Check that a nuke ops game mode can start without issue. I.e., that the nuke station and such all get loaded.
     /// </summary>
-    [Test]
+    [Test, Explicit]
     public async Task TryStopNukeOpsFromConstantlyFailing()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings

@@ -56,6 +56,7 @@ jobs:
       continue-on-error: true
       run: Tools/actions_changelogs_since_last_run.py
       env:
+        CHANGELOG_FILE: Resources/Changelog/QuantumBlue.yml
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
         DISCORD_ROLE_ID: ${{ vars.DISCORD_ROLE_ID }}
@@ -64,4 +65,5 @@ jobs:
       continue-on-error: true
       run: Tools/actions_changelog_rss.py
       env:
+        CHANGELOG_FILE: Resources/Changelog/QuantumBlue.yml
         CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}

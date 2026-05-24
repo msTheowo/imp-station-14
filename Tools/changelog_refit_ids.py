@@ -12,7 +12,7 @@ except IndexError:
     i = 1
 
 
-file_path = Path("Resources/Changelog/Impstation.yml")
+file_path = Path("Resources/Changelog/QuantumBlue.yml")
 changelog = file_path.read_text()
 
 prefix = "id: "
