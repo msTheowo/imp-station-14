@@ -2,7 +2,7 @@
   id: ElkridgeQB
   mapName: 'Elkridge Depot'
   mapPath: /Maps/_QB/elkridge.yml
-  minPlayers: 8
+  minPlayers: 12
   maxPlayers: 50
   stations:
     Elkridge:

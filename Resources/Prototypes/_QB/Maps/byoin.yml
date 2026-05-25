@@ -2,8 +2,8 @@
   id: ByoinQB
   mapName: 'Byōin'
   mapPath: /Maps/_QB/byoin.yml
-  minPlayers: 0
-  maxPlayers: 35
+  minPlayers: 12
+  maxPlayers: 50
   stations:
     Byoin:
       stationProto: StandardNanotrasenStation
