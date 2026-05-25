@@ -81,6 +81,9 @@
     fx: EffectRCDDeconstruct2
   - type: AcousticData # VDS
     absorption: 2
+  - type: InteractionVerbs # EE
+    allowedVerbs:
+    - Rattle
 
 - type: entity
   parent: BaseFenceMetal

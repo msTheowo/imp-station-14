@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseObjectVerbsCommon, BaseItem] # DEN: Add interaction verb parent
   id: BaseKnife
   abstract: true
   components:
