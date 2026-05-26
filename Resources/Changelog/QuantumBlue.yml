@@ -1,4 +1,11 @@
 Entries:
+  - author: Moodotsuki
+    changes:
+      - type: Fix
+        message: Various small fixes to Pebble, see the PR for a list.
+    id: 113
+    time: '2026-05-26T07:12:57.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/125
   - author: msTheowo
     changes:
       - type: Add
