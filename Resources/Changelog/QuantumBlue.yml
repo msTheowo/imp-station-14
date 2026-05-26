@@ -1,4 +1,25 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Byoin: The arrivals shuttle shouldn''t be docking at cargo anymore. Hopefully.'
+      - type: Tweak
+        message: 'Slopcomm: The ghost warp menu should no longer be filled with CC locations.'
+      - type: Tweak
+        message: 'Slopcomm: They remembered to plug the bar''s machines this time.'
+      - type: Tweak
+        message: 'Dash: Sec now has an interrogation lamp. Scientists are happy to hear this.'
+      - type: Tweak
+        message: 'Dash: All devices should hopefully be powered now.'
+      - type: Tweak
+        message: 'Dash: The brig now has evidence lockers.'
+      - type: Tweak
+        message: 'Dash: The frank engine got a small nerf.'
+      - type: Tweak
+        message: 'Dash: Atmos techs have access to their beautiful axe again.'
+    id: 114
+    time: '2026-05-26T07:13:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/126
   - author: Moodotsuki
     changes:
       - type: Fix
