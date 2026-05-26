@@ -385,7 +385,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
 
             (string, object)[] localeArgs =
             [
-                ("user", user),
+                ("user", Identity.Entity(user, EntityManager)),
                 ("target", Identity.Entity(target, EntityManager)),
                 ("used", used ?? EntityUid.Invalid),
                 ("selfTarget", user == target),
