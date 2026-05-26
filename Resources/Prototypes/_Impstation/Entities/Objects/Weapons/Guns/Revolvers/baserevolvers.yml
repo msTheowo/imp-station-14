@@ -1,6 +1,6 @@
 - type: entity
   name: BaseWeaponRevolver
-  parent: BaseItem
+  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
   id: BaseWeaponRevolver
   description: A rooty tooty point and shooty.
   abstract: true

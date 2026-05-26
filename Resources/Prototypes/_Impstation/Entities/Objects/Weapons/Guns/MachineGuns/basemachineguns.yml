@@ -1,7 +1,7 @@
 # Sub-Machine-Guns, think small weapons like the WT550 or the Drozd that use pistol ammunition.
 - type: entity
   name: BaseSMG
-  parent: BaseItem
+  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
   id: BaseWeaponSubMachineGun
   description: A rooty tooty point and shooty.
   abstract: true
@@ -86,7 +86,7 @@
 # Light Machine Guns, like the L6-SAW, are bigger and use rifle ammunition.
 - type: entity
   name: BaseWeaponLightMachineGun
-  parent: BaseItem
+  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
   id: BaseWeaponLightMachineGun
   description: A rooty tooty point and shooty.
   abstract: true
@@ -182,7 +182,7 @@
 # Heavy Machine Guns, like a big minigun, are the real big hitters. Very self-explanatory.
 - type: entity
   name: BaseWeaponHMG
-  parent: BaseItem
+  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
   id: BaseWeaponHeavyMachineGun
   description: Spray and pray.
   abstract: true

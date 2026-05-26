@@ -186,6 +186,9 @@
   - type: AcousticData # VDS
     absorption: 10
     reflectRay: true
+  - type: InteractionVerbs # EE
+    allowedVerbs:
+    - KnockOn
   placement:
     mode: SnapgridCenter
 
@@ -199,7 +202,7 @@
 
 - type: entity
   id: AirlockGlass
-  parent: Airlock
+  parent: [BaseObjectVerbsStructure, Airlock] # DEN: Add interaction verb parent
   name: glass airlock
   components:
   - type: MeleeSound
